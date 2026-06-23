@@ -24,5 +24,3 @@ for city, city_info in cities.items():
     print(f"\n{city.title()} is in {country.title()}.")
     print(f"  It's population - {population} people.")
     print(f"  {fact}")
-
-    
