@@ -10,14 +10,19 @@ class User:
 
     def describe_user(self):
         """Выводит сводку с информацией о пользователе."""
-        print(f"{self.first_name} {self.last_name}")
-        print(f"Имя пользователя: {self.username}")
-        print(f"Email: {self.email}")
-        print(f"Место жительства: {self.location}")
+        print(f"\n{self.first_name} {self.last_name}")
+        print(f"    Имя пользователя: {self.username}")
+        print(f"    Email: {self.email}")
+        print(f"    Место жительства: {self.location}")
 
     def greet_user(self):
         """Выводит персональное приветсвие для пользователя."""
-        print(f"Добрый день {self.username}")
+        print(f"\nДобрый день, {self.username}")
 
 user_1 = User('anton', 'karpov', 'antonch1k', 'antonch1k@gmail.com', 'astana')
-user_2 =
+user_1.describe_user()
+user_1.greet_user()
+
+user_2 = User('maksim', 'gerasimov', 'gerasim002', 'gerasim02@gmail.com', 'vladivostok')
+user_2.describe_user()
+user_2.greet_user()
