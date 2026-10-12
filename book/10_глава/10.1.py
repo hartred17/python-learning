@@ -6,6 +6,5 @@ contents = path.read_text()
 print(contents)
 
 print("\n--- Разбиение текста на отдельные строки:")
-lines = contents.splitlines()
-for line in lines:
+for line in contents.splitlines():
     print(line) 
