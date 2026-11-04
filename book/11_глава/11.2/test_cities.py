@@ -9,5 +9,5 @@ def test_cities():
 
 def test_city_country_population():
     """Поддерживает ли вывод в формате: 'Santiago, Chile - population xxx'."""
-    formated_city = city_country("santiago", "chile", 5000000)
+    formated_city = city_country("santiago", "chile", 5000000) # type: ignore
     assert formated_city == "Santiago, Chile - population 5000000"
